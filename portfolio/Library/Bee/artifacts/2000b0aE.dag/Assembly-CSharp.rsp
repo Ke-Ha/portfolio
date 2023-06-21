@@ -346,6 +346,7 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Script/player.cs"
 "Assets/Script/TextBlink.cs"
 "Assets/Script/Title_Start.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
