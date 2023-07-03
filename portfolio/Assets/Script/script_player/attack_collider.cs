@@ -24,7 +24,7 @@ public class attack_collider : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == enemy_tag) //衝突した対象のタグがEnemyだったらtrue
+        if (collision.gameObject.tag == enemy_tag) //対象のタグがEnemyだったらtrue
         {
             on_attack_collider = true;
         }
@@ -32,13 +32,16 @@ public class attack_collider : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.gameObject.tag==enemy_tag){ //衝突した対象のタグがEnemyだったらtrue
+        if(collision.gameObject.tag==enemy_tag){
             on_attack_collider = true;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision) 
     {
-        on_attack_collider = false;
+        if (collision.gameObject.tag == enemy_tag) 
+        {
+            on_attack_collider = false;
+        }
     }
 }

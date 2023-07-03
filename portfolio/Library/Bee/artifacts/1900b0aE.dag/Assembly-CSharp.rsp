@@ -368,6 +368,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Script/script_enemy/enemy.cs"
+"Assets/Script/script_enemy/en_attack_collider.cs"
 "Assets/Script/script_player/attack_collider.cs"
 "Assets/Script/script_player/player.cs"
 "Assets/Script/script_title/TextBlink.cs"
