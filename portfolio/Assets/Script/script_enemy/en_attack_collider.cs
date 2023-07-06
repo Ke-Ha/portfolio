@@ -20,9 +20,10 @@ public class en_attack_collider : MonoBehaviour
 
     }
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == player_tag) //‘ÎÛ‚Ìƒ^ƒO‚ªplayer‚¾‚Á‚½‚çtrue
+        if (collision.gameObject.tag == player_tag)
         {
             on_attack_collider = true;
         }
