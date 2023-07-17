@@ -31,6 +31,28 @@ public class game_manager : MonoBehaviour
 
     void Update()
     {
+        if(fall_cl.win_state == true)
+        {
+            //メッセージ表示、勝利状態をtrueにする
+            text_win.color = new Color32(255, 255, 255, 255);
+            text_back.color = new Color32(255, 255, 255, 255);
+
+            if (fall_cl.playerwin) text_win.text = "Player Win!";
+            else if (fall_cl.enemywin) text_win.text = "Enemy Win!";
+            else if (fall_cl.player1win) text_win.text = "Player1 Win!";
+            else if (fall_cl.player2win) text_win.text = "Player2 Win!";
+
+            if (fall_cl.win_state)
+            {
+                if (Input.GetKeyDown(KeyCode.Return)) SceneManager.LoadScene("title");
+            }
+
+
+
+        }
+
+
+
         if (fall_cl.playerwin == true) //プレイヤーが勝利していたとき
         {
             //メッセージ表示、勝利状態をtrueにする
